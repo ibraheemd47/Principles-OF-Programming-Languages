@@ -1,0 +1,42 @@
+
+(define make-error
+    (lambda (msg)
+        (cons 'error msg)))
+
+(define is-error?
+    (lambda (value)
+        (if (pair? value)
+            (eq? (car value) 'error)
+            #f))
+
+    )
+        
+
+(define bind
+    (lambda (value func)
+        (if (is-error? value)
+                value
+                (func value))))
+
+
+(define dict
+    (lambda (pairs)
+        pairs))
+
+(define dict?
+    (lambda (dictionary)
+        (if (pair? dictionary)
+                  (if(pair? (car dictionary))
+                        (if (symbol? (car (car dictionary)))
+                        (dict? (cdr dictionary))
+                        #f)
+                        #f)
+                    (eq? dictionary '()))))
+                                                           
+(define get
+    (lambda (dictionay key)
+    (if(pair? dictionay)
+        (if (eq? (car (car dictionay)) key)
+            (cdr (car dictionay) )
+            (get (cdr dictionay) key))
+        (make-error 'there-is-no-such-key))))
