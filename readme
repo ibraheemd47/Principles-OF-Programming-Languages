@@ -1,0 +1,49 @@
+This course studies principles underlying the design of programming languages. It has four main objectives:
+
+Learning principles of programming languages: elements of programming languages; abstraction means in programming languages; formal definition of programming languages – concrete syntax, abstract syntax, operational semantics; program correctness – type checking and type inference systems.
+Describing program execution by studying evaluators: interpreters, transformers and compilers. 
+Comparing programming paradigms: Functional programming, Logic programming and Imperative programming.
+Learning principles of program design: Abstraction, contracts, modular architecture, testing.
+The course is a mixture of theory and practice. Theoretical topics are supported by implemented software, and course assignments involve programming. The course interleaves two main threads: (1) learning new programming techniques (functional programming, logic programming) using practical examples in JavaScript, TypeScript and Prolog; (2) learning meta-programming by developing parsers, interpreters, and program transformers (illustrated by a type inference system for functional programming). The course uses the Scheme language (Racket) and TypeScript for teaching the general theory and practice of language design and implementation. Meta-programming tools are developed to demonstrate the advantage of a formal definition of programming languages syntax and semantics to "reason about code". These software tools are also used as practical examples of good software design, using functional programming.
+
+Topics
+Applied Functional Programming
+Benefits of Functional programming (FP): safety, concurrency, asynchronous code
+Characteristics of FP: pure functions, immutability, higher-order functions, composition
+FP in JavaScript: function, map, filter, chain, flatmap, reduce, zip.
+Types in TypeScript: incremental typing, basic types, interfaces, contracts
+Hierarchical data types: Arrays, objects, JSON
+Higher-order procedures
+Polymorphic procedures: Generic types
+Syntax, Semantics, Types
+Concrete and abstract syntax: comparing JavaScript and Scheme
+Operational semantics: the substitution model
+Types: basic types, composite types, type constructors, algebraic data types
+Higher-Order Functions
+Functions and the processes they generate
+Anonymous functions, closures, lexical scope
+Partial evaluation, currying and function composition
+Primitive and user-defined procedures, derived expressions, special operators
+Abstraction on Data and on Control
+Data abstraction: Abstract Data Types (ADTs), Interfaces, Immutable data structures
+ADTs and Algebraic Data Types to model abstract syntax
+From iterators to streams to observables - push and pull data flow
+Control abstraction: Promises and asynchronous programming - reactive programming model
+Coroutines: generators, yield, async and await in JavaScript
+Continuation passing style programming in Scheme
+Tail Recursion Optimization, stack execution model
+Evaluators for Functional Programming
+Abstract syntax parser
+An evaluator for the substitution model
+The environment model evaluation algorithm
+Evaluator for the environment-based operational semantics
+Type Correctness
+Type checking and inference
+An algorithm for type inference
+Implementing a program transformer: Scheme to Typed Scheme.
+Logic Programming
+Relational logic programming
+Logic programming
+Meta-tools: Backtracking optimization (cuts); Unify;
+An evaluator for Prolog
+Conclusion: Techniques, Principles and Languages Comparison
