@@ -1,0 +1,16 @@
+#lang racket/base
+
+(define last-item
+    (lambda (lst)
+    @todo
+))
+
+(define remove-last-item
+    (lambda (lst)
+    @todo
+))
+
+(define rotate-nth
+    (lambda (lst n)
+    @todo
+))
